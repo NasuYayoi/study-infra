@@ -1,0 +1,19 @@
+.side-bar {
+  height: 100vh;
+}
+
+.menu {
+  p {
+    cursor: pointer; padding: 10px;
+  }
+  .inner {
+    display: none;
+    li {
+      padding: 10px 40px;
+    }
+  }
+}
+
+.catergory {
+  font-weight: bold;
+}

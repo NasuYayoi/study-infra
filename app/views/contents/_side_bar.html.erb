@@ -1,0 +1,33 @@
+<div class="side-bar col s3 yellow lighten-3">
+  <ul class="collection menu">
+    <li>
+      <p class="collection-item catergory">インフラ</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory"><%= link_to 'インフラとは', contents_what_infra_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'サーバ', contents_server_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'ネットワーク', contents_network_path %></li>
+        <li class="collection-item subcatergory">OS</li>
+        <li class="collection-item subcatergory">ストレージ</li>
+        <li class="collection-item subcatergory"><%= link_to '仮想化', contents_virtualization_path %></li>
+        <li class="collection-item subcatergory">クラウド</li>
+      </ul>
+    </li>
+    <li>
+      <p class="collection-item catergory">Linux</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory"><%= link_to 'Linuxについて', contents_linux_path %></li>
+        <li class="collection-item subcatergory">環境構築</li>
+        <li class="collection-item subcatergory">コマンド</li>
+        <li class="collection-item subcatergory">SSH</li>
+      </ul>
+    </li>
+    <li>
+      <p class="collection-item catergory">その他</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory">ライトニングトークについて</li>
+        <li class="collection-item subcatergory">SESと客先常駐の関係</li>
+        <li class="collection-item subcatergory"><%= link_to '現場はこんなでした！', contents_experience_path %></li>
+      </ul>
+    </li>
+  </ul>
+</div>
