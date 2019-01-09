@@ -1,30 +1,12 @@
-<nav>
-    <div class="nav-wrapper light-blue">
-      <a href="#" class="brand-logo">ゆるっとインフラの勉強をする。</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <% if user_signed_in? %>
-          <li><%= link_to 'マイページ', "/users/#{current_user.id}" %></li>
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to 'ログイン', new_user_session_path %></li>
-          <li><%= link_to '新規登録',new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    </div>
-  </nav>
+<h5>このアプリの目的</h5>
 
+<p>
+1.前職で得たことを忘れないうちに、アウトプットする。
 
-<div class="row">
+2.webエンジニアになるにしてもインフラを知っていた方が強いと思う。
 
-  <div class="col s3 yellow">
-    <ul class="collection">
-      <li class="collection-item">インフラの基礎</li>
-      <li class="collection-item">Linuxの基礎</li>
-    </ul>
-  </div>
+3.職についている間に勉強しなかったことへの後悔の気持ちもあります...。
 
-  <div class="col s9">
-    <p>texttexttexttexttexttexttexttexttexttext</p>
-  </div>
+なので、少しずつでも勉強するきっかけにしようとの思いから作成しました。
+</p>
 
-</div>
