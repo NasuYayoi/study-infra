@@ -1,0 +1,33 @@
+<div class="side-bar col s3 yellow lighten-3">
+  <ul class="collection menu">
+    <li>
+      <p class="collection-item catergory button">インフラ</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory"><%= link_to 'インフラとは', contents_what_infra_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'サーバ', contents_server_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'ネットワーク', contents_network_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'OS', contents_os_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'ストレージ', contents_storage_path %></li>
+        <li class="collection-item subcatergory"><%= link_to '仮想化', contents_virtualization_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'クラウド', contents_cloud_path %></li>
+      </ul>
+    </li>
+    <li>
+      <p class="collection-item catergory">Linux</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory"><%= link_to 'Linuxについて', contents_linux_path %></li>
+        <li class="collection-item subcatergory"><%= link_to '環境構築', contents_env_const_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'コマンド', contents_command_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'SSH', contents_ssh_path %></li>
+      </ul>
+    </li>
+    <li>
+      <p class="collection-item catergory">その他</p>
+      <ul class="inner">
+        <li class="collection-item subcatergory"><%= link_to 'ライトニングトークについて', contents_lightning_talk_path %></li>
+        <li class="collection-item subcatergory"><%= link_to 'SESと客先常駐の関係', contents_ses_etc_path %></li>
+        <li class="collection-item subcatergory"><%= link_to '現場はこんなでした！', contents_experience_path %></li>
+      </ul>
+    </li>
+  </ul>
+</div>
