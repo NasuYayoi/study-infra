@@ -1,21 +1,28 @@
 class MemosController < ApplicationController
+
+  layout 'mypage'
+
   before_action :set_memos
   before_action :set_memo, only: [:show, :edit, :update, :destroy]
 
   # GET users/1/memos
   def index
     @memos = @user.memos
+    @title = "#{current_user.name}さんのページ"
   end
 
   # GET users/1/memos/new
   def new
     @memo = @user.memos.build
     @submit = "保存する"
+    @title = "新規作成ページ"
+    @path = request.path
   end
 
   # GET users/1/memos/1/edit
   def edit
     @submit = "更新する"
+    @title = "編集ページ"
   end
 
   # POST users/1/memos

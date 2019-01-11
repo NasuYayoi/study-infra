@@ -21,7 +21,17 @@
   </head>
 
   <body>
-    <%= render "/layouts/header" %>
+    <nav>
+      <div class="nav-wrapper light-blue">
+        <a href="#!" class="brand-logo"><%= @title %></a>
+        <ul class="right hide-on-med-and-down">
+          <% unless @path == new_user_memo_path(params[:user_id]) %>
+            <li><%= link_to '新規作成', new_user_memo_path(params[:user_id]), class: "waves-effect waves-light btn-large red accent-4" %></li>
+          <% end %>
+            <li><%= link_to '戻る', contents_path, class: "waves-effect waves-light btn-large red accent-4" %></li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="row">
       <%= render "/layouts/side_bar" %>
@@ -29,5 +39,6 @@
         <%= yield %>
       </div>
     </div>
+
   </body>
 </html>
