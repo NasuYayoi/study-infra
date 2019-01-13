@@ -60,4 +60,9 @@ $(document).on('turbolinks:load', function() {
     $('.experience').css('display','block');
   });
 
+  // var target = $(event.target);
+  // $('.' + $(target)).on("click", function() {
+  // $('section').css('display','none');
+  // $('.' + $(target)).css('display','block');
+  // });
 });
