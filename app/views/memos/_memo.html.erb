@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col s8 offset-s2">
+    <div class="card light-blue lighten-5">
+      <div class="card-content flow-text">
+        <p><%= simple_format(memo.text) %></p>
+      </div>
+      <div class="card-action">
+        <% if user_signed_in? && current_user.id == memo.user_id %>
+          <%= link_to '編集', edit_user_memo_path(memo.user, memo), class: "waves-effect waves-light btn yellow black-text" %>
+          <%= link_to '削除',  [memo.user, memo], method: :delete, data: { confirm: 'Are you sure?' }, class: "waves-effect waves-light btn yellow black-text" %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
