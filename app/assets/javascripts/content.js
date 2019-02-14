@@ -45,19 +45,19 @@ $(document).on('turbolinks:load', function() {
     $('.env_const').css('display','block');
   });
 
-  $('.command_link').on("click", function() {
+  $('.what_aws_link').on("click", function() {
     $('section').css('display','none');
-    $('.command').css('display','block');
+    $('.what_aws').css('display','block');
+  });
+
+  $('.aws_word_link').on("click", function() {
+    $('section').css('display','none');
+    $('.aws_word').css('display','block');
   });
 
   $('.ses_etc_link').on("click", function() {
     $('section').css('display','none');
     $('.ses_etc').css('display','block');
-  });
-
-  $('.experience_link').on("click", function() {
-    $('section').css('display','none');
-    $('.experience').css('display','block');
   });
 
   // var target = $(event.target);
